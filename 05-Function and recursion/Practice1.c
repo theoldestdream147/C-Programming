@@ -7,4 +7,5 @@ int average(int x, int y, int z){
 int main(){
     int c  = average(5, 10, 15);
     printf("Average of 5, 10 and 15 is %d", c);
+    return 0;
 }
