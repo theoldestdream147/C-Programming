@@ -15,9 +15,11 @@ int main() {
     
         if (guessednumber<randomnumber){
             printf("The number is greater than %d\n", guessednumber);
-        } else {
+        } else if (guessednumber>randomnumber){
             printf("The number is less than %d\n", guessednumber);
-        }    
+        } else {
+            printf("Congratulations! You guessed the number.\n");
+        }
         no_of_guesses++ ;
     } while (guessednumber != randomnumber);
     printf("You guessed the number in %d attempts\n", no_of_guesses);
