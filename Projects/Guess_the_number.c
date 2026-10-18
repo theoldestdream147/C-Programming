@@ -12,7 +12,6 @@ int main() {
     do {
         printf("Guess the no. between between 1 to 100\n");
         scanf("%d",&guessednumber);
-    
         if (guessednumber<randomnumber){
             printf("The number is greater than %d\n", guessednumber);
         } else if (guessednumber>randomnumber){
