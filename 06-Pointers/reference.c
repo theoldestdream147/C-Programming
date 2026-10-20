@@ -1,15 +1,16 @@
 #include<stdio.h>
 
-int* value(int*);
+void value(int*);
 
-int* value(int* x){
-    return x;
+void value(int* x){
+    *x = 19;
 }
 
 int main(){
     int a = 6;
     int* ptr;
-    ptr =value(&a) ;
+    ptr = &a ;
+    value(ptr);
     printf("the value is %d",*ptr);
     return 0;
 
